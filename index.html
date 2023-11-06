@@ -1,71 +1,83 @@
-<html><head>
+<!DOCTYPE html>
+<html>
+<head>
     <title>Devast.io - The Online Post-Apocalyptic Survival Game.</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="In a post-apocalyptic world where nature takes back its rights. Build a bunker, weapons, warm up and produce your own food to protect yourself from this ruthless world and the many other survivors. Play completely free online with other players now!">
-    <meta name="keywords" content="devast, devast.io, post-apocalyptic, post-apocalyptic survival game, survival game, online game, mmo, multiplayer, starve.io, starveio, survival, io games, .io, craft, browser game, html game, html5 game, flash game, wasteland, radioactivity, irradiated city, uranium, hunger, cold, weapons, crafting, cities, nuclear war, nuclear, cute, fun, hardcore, fight">
-    <meta property="og:title" content="Devast.io - The post-apocalyptic survival game">
-    <meta property="og:description" content="In a post-apocalyptic world where nature takes back its rights. Build a bunker, weapons, warm up and produce your own food to protect yourself from this ruthless world and the many other survivors. Play completely free online with other players now!">
-    <meta property="og:url" content="https://devasio.github.io/Devast/">
-    <meta property="og:site_name" content="devast.io">
-    <meta property="og:image" content="https://raw.githubusercontent.com/devasio/Devast/main/img/bubblegum2out.png">
-    <meta property="og:image:width" content="800">
-    <meta property="og:image:height" content="450">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="3 days">
-    <meta name="googlebot" content="all">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Viga">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="In a post-apocalyptic world where nature takes back its rights. Build a bunker, weapons, warm up and produce your own food to protect yourself from this ruthless world and the many other survivors. Play completely free online with other players now!" />
+    <meta name="keywords"
+        content="devast, devast.io, post-apocalyptic, post-apocalyptic survival game, survival game, online game, mmo, multiplayer, starve.io, starveio, survival, io games, .io, craft, browser game, html game, html5 game, flash game, wasteland, radioactivity, irradiated city, uranium, hunger, cold, weapons, crafting, cities, nuclear war, nuclear, cute, fun, hardcore, fight" />
+    <meta property="og:title" content="Devast.io - The post-apocalyptic survival game" />
+    <meta property="og:description"
+        content="In a post-apocalyptic world where nature takes back its rights. Build a bunker, weapons, warm up and produce your own food to protect yourself from this ruthless world and the many other survivors. Play completely free online with other players now!" />
+    <meta property="og:url" content="https://devasio.github.io/Devast/" />
+    <meta property="og:site_name" content="devast.io" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/devasio/Devast/main/img/bubblegum2out.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="450" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="3 days" />
+    <meta name="googlebot" content="all" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Viga" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body id="bod" style="background-color: rgb(70, 102, 77);">
-    <canvas id="can" width="872" height="931" style="width: 872px; height: 931px; image-rendering: auto;"></canvas>
+<body id="bod">
+    <canvas id="can"></canvas>
     <script src="client.js"></script>
-    <div id="nickname" style="left: 332px; top: 292px; width: 232px; height: 37px; display: inline-block;">
-        <input id="nicknameInput" type="text" placeholder="Nickname" maxlength="16" style="border-width: 3px; width: 232px; height: 37px; font-size: 19px;">
+    <div id="nickname">
+        <input id="nicknameInput" type="text" placeholder="Nickname" maxLength="16">
     </div>
-    <div id="serverList" style="left: 344px; top: 339px; width: 211px; height: 29px; background-size: 17px; display: inline-block;"><select id="servers" style="width: 243px; height: 29px; font-size: 13px;"><option value="dc69509b-e724-4e1b-a6ac-69bee41be8cf">Europe 1</option><option value="99643994-ef74-47da-a533-ec0a62cc6a52">Europe 2</option><option value="11294e9b-55ca-4f41-be53-e6e27edf83c3">US West 1</option><option value="31ac2a84-4847-4175-908c-a7b501277d05">Oceania 1</option><option value="bfd6e4db-556a-4322-a396-892cbeb89927">US East 1</option><option value="c8e9b171-be3c-4453-ac30-cc366e3921eb">Asia 1</option></select></div>
-    <div id="changelog" style="left: 655px; top: 21px; width: 208px; height: 264px; font-size: 11px; border-radius: 5px; padding-top: 19px; display: inline-block;">
-        <div id="changelogTitle" style="width: 208px; height: 24px; font-size: 16px; padding-top: 8px; padding-bottom: 0px; margin-bottom: -3px; margin-top: -24px; border-radius: 5px 5px 0px 0px;">CHANGELOG</div>
-        <a target="blank"><img id="changelogImg" src="./img/changelog-28.png" alt="Devastio" style="width: 185px; height: 84px;"></a>
+    <div id="serverList">
+        <select id="servers">
+        </select>
+    </div>
+    <div id="changelog">
+        <div id="changelogTitle">CHANGELOG</div>
+        <a target="blank"><img id="changelogImg" src="./img/changelog-28.png" alt="Devastio"></a>
         <div id="scrollChangelog">
             <div style="margin-top: 5px;"> - <a target="blank" style="color:white;">SEE MORE</a> -
             </div>
-            <div id="changelogText" style="font-size: 10px; padding: 5px 15px 15px;">Your predecessors did not survive. But they have left behind <span style="color:#bcb33e;">some vestiges!</span> Dare to venture into the <span style="color:#bcb33e;">cave</span>, tunnel through the stone and maybe you will discover a <span style="color:#bcb33e;">hidden bunker</span>.
+            <div id="changelogText">Your predecessors did not survive. But they have left behind <span
+                    style="color:#bcb33e;">some vestiges!</span> Dare to venture into the <span
+                    style="color:#bcb33e;">cave</span>, tunnel through the stone and maybe you will discover a <span
+                    style="color:#bcb33e;">hidden bunker</span>.
                 Have you always dreamed of being green and radioactive? Do you look good with dynamite? Do you want to
                 work with long, rotten brains? Maybe you're cut out to <span style="color:#bcb33e;">be a Ghoul</span>?
                 That's good news! The <span style="color:#bcb33e;">new game mode </span>offers you the opportunity to
-                transform yourself and create chaos around you!
+                transform yourself and create chaos around you!</span>
             </div>
         </div>
     </div>
-    <div id="howtoplay" style="left: 655px; top: 248px; width: 208px; height: 367px; bottom: 819px; font-size: 13px; margin-top: 0px; padding-top: 19px; display: inline-block;">
-        <div id="howtoplayTitle" style="width: 208px; height: 24px; font-size: 16px; padding-top: 0px; padding-bottom: 13px; margin-bottom: 6px; margin-top: 0px; border-radius: 5px 5px 0px 0px;">HOW TO PLAY?</div>
-        <div id="howtoplayText" style="font-size: 11px; height: 55px;">
-            <p><span style="color:#bcb33e;">Eat</span>, <span style="color:#bcb33e;">warm up</span>, and <span style="color:#bcb33e;">survive </span>by</p>
+    <div id="howtoplay">
+        <div id="howtoplayTitle">HOW TO PLAY?</div>
+        <div id="howtoplayText">
+            <p><span style="color:#bcb33e;">Eat</span>, <span style="color:#bcb33e;">warm up</span>, and <span
+                    style="color:#bcb33e;">survive </span>by</p>
             <p>gathering resources, crafting items</p>
             <p>and building a shelter. Fight other</p>
             <p>players, and beware the <span style="color:#bcb33e;">radiation</span>!</p>
         </div>
-        <div id="howtoplayCommands" style="width: 208px; height: 24px; font-size: 16px; padding-top: 13px; padding-bottom: 13px; margin-bottom: 6px; margin-top: 11px;">COMMANDS</div>
-        <div id="mainCommands" style="margin-top: 58px;">
-            <div id="moveCommand" style="padding-left: 21px; padding-right: 21px;">MOVE</div>
-            <div id="hitCommands" style="padding-left: 10px; padding-right: 10px;">HIT </div>
-            <div id="runCommands" style="padding-left: 0px; padding-right: 21px;">RUN </div>
+        <div id="howtoplayCommands">COMMANDS</div>
+        <div id="mainCommands">
+            <div id="moveCommand">MOVE</div>
+            <div id="hitCommands">HIT </div>
+            <div id="runCommands">RUN </div>
         </div>
-        <div id="secondCommands" style="margin-top: 58px;">
-            <div id="interactCommands" style="padding-left: 7px; padding-right: 0px;">INTERACT</div>
-            <div id="craftCommands" style="padding-left: 5px; padding-right: 19px;">CRAFT</div>
-            <div id="mapCommands" style="padding-left: 6px; padding-right: 12px;">MAP</div>
+        <div id="secondCommands">
+            <div id="interactCommands">INTERACT</div>
+            <div id="craftCommands">CRAFT</div>
+            <div id="mapCommands">MAP</div>
         </div>
     </div>
     <div id="preroll">
     </div>
     <div id="chat">
-        <input id="chatInput" type="text" placeholder="Enter text..." maxlength="60">
+        <input id="chatInput" type="text" placeholder="Enter text..." maxLength="60">
     </div>
-
-</body></html>
+</body>
+</html>
